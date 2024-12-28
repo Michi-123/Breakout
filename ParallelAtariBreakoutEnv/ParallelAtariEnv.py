@@ -45,7 +45,7 @@ class ParallelAtariEnv:
         upper_area = stacked_array[:upper_limit, :, :]  # 上部の領域
 
         # 上部領域がスタック全体で変化しないか判定(stackの最初と最後を比較)
-        return np.all(upper_area[..., 0] == upper_area[..., N_STACK - 1])
+        return np.all(upper_area[..., 0] == upper_area[..., self.n_stack - 1])
 
     def reset(self):
         states = []
