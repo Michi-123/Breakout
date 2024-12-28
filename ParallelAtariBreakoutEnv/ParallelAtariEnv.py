@@ -4,6 +4,7 @@ import numpy as np
 from collections import deque
 from skimage.transform import resize
 from skimage.color import rgb2gray
+import gym
 
 class ParallelAtariEnv:
     def __init__(self, env_id, n_envs, n_stack, seed=None):
