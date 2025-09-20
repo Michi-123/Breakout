@@ -3,6 +3,7 @@ import gym
 import cv2
 import numpy as np
 from collections import deque
+import gymnasium as gym
 
 class SimpleParallelAtariEnv:
     """ParallelAtariBreakoutEnvの代替（元のコードと完全互換）"""
